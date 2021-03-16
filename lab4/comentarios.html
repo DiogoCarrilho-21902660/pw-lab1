@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Diogo carrilho">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Roma">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="images/roma.ico"/>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <title>Roma</title>
+    </head>
+    <body>
+        <header>
+            
+            <h1 class="titulo">Roma</h1>
+            <figure><img src="images/roma.png" title="test"><figcaption><details>Cidade de Roma</details></figcaption></figure><br>
+        </header>
+        <nav>
+            <a href="quizz.html"><i><i class="material-icons">&#xe87f;</i>Quizz</a> |
+                <a href="comentarios.html"><i class="material-icons">&#xe3c9;</i><b>Comentários</b></a> |
+                   <a href="../index.html"><i class="material-icons">&#xe88a;</i>Home</a> |
+                        <a href="index.html"><i class="material-icons">&#xe851;</i>Introdução</a> |
+                            <a href="info.html"><i class="material-icons">&#xe88e;</i>Informações</a> |
+                                <a href="local.html"><i class="material-icons">&#xe0c8;</i>Localização</a> |
+                                     <a href="multimedia.html"><i class="material-icons">&#xe63a;</i>Multimedia</a> |
+                                        <a href="html5-css.html"><i class="material-icons">&#xe86f;</i>HTML5 e CSS</a><br>
+        </nav>
+        <main>
+            <section>
+                <h3>Comentários</h3>
+                <form method="POST" action="mailto:nome.apelido@gmail.com">
+                    <fieldset>
+                        <legend>Questão 1) O que achou do nosso serviço?</legend>
+                        <label for="Resposta1"></label>
+                        <textarea id="Resposta1" name="Resposta1" rows="4" cols="50" placeholder="Resposta" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 2) O nosso website superou as suas expectativas?</legend>
+                        <label for="R1">Sim</label>
+                        <input type="radio" id="R1" name="Resposta2" value="Sim"><br><br>
+                        <label for="R2">Não</label>
+                        <input type="radio" id="R2" name="Resposta2" value="Não"><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 3) Qual é a probabilidade de visitar o nosso website novamente?</legend>
+                        <input type="range" id="range" name="range" min="0" max="100" onchange="output.value=this.value"><br>
+                        <label>Valor:</label>
+                        <output name="output"><output class="value"></output></output>%
+                    </fieldset>    
+                    <fieldset>
+                        <legend> Questão 4)Está satisfeito com a clareza e organização do nosso conteúdo?</legend>
+                        <label for="R1">Sim</label>
+                        <input type="radio" id="R1" name="Resposta4" value="Sim"><br><br>
+                        <label for="R2">Não</label>
+                        <input type="radio" id="R2" name="Resposta4" value="Não"><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 5)Sente que as nossas informações estão atualizadas?</legend>
+                        <label for="R1">Sim</label>
+                        <input type="radio" id="R1" name="Resposta5" value="Sim"><br><br>
+                        <label for="R2">Não</label>
+                        <input type="radio" id="R2" name="Resposta5" value="Não"><br><br>
+                        <label for="SeSimQual"> Se respondeu que não, especifique.</label>
+                        <br><textarea id="Resposta5" name="Resposta5" rows="4" cols="50" placeholder="Resposta"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 6)Os nossos serviços corresponderam às suas necessidades?</legend>
+                        <label for="R1">Sim</label>
+                        <input type="radio" id="R1" name="Resposta6" value="Sim"><br><br>
+                        <label for="R2">Não</label>
+                        <input type="radio" id="R2" name="Resposta6" value="Não"><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 7) No que diz respeito à multimedia tem alguma sugestão/monumento para ser adicionado ao website?</legend>
+                        <label for="R1">Sim</label>
+                        <input type="radio" id="R1" name="Resposta7" value="Sim"><br><br>
+                        <label for="R2">Não</label>
+                        <input type="radio" id="R2" name="Resposta7" value="Não"><br><br>
+                        <label for="SeSimQual"> Se respondeu que sim, especifique.</label>
+                        <br><textarea id="Resposta7" name="Resposta7" rows="4" cols="50" placeholder="Resposta"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 8) Como avaliaria a apresentação/aspeto do nosso website?</legend>
+                        <input type="checkbox" id="R1" name="Resposta8" value="Excelente">
+                        <label for="Excelente">Excelente</label>
+                        <br><input type="checkbox" id="R2" name="Resposta8" value="MTBom">
+                        <label for="MTBom">Muito Bom</label>
+                        <br><input type="checkbox" id="R3" name="Resposta8" value="Bom">
+                        <label for="Bom">Bom</label>
+                        <br><input type="checkbox" id="R4" name="Resposta8" value="Razoavel">
+                        <label for="Razoavel">Razoável</label>
+                        <br><input type="checkbox" id="R5" name="Resposta8" value="Mau">
+                        <label for="Mau">Mau</label>
+                        <br><input type="checkbox" id="R6" name="Resposta8" value="MTMau">
+                        <label for="MTMau">Muito Mau</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 9) No que diz respeito ao website em si, tem alguma ideia de possiveis melhorarias?</legend>
+                        <label for="R1">Sim</label>
+                        <input type="radio" id="R1" name="Resposta9" value="Sim"><br><br>
+                        <label for="R2">Não</label>
+                        <input type="radio" id="R2" name="Resposta9" value="Não"><br><br>
+                        <label for="SeSimQual"> Se respondeu que sim, especifique.</label>
+                        <br><textarea id="Resposta9" name="Resposta9" rows="4" cols="50" placeholder="Resposta"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questão 10) Qual é a sua apreciação global do website?</legend>
+                        <label for="R10">Excelente</label>
+                        <input type="radio" id="R10" name="Resposta10" value="excelente">
+                        <label for="R10">Bom</label>
+                        <input type="radio" id="R10" name="Resposta10" value="Bom">
+                        <label for="R10">Satisfatório</label>
+                        <input type="radio" id="R10" name="Resposta10" value="Satisfatório">
+                        <label for="R10">Mau</label>
+                        <input type="radio" id="R10" name="Resposta10" value="Mau">
+                        <br><input type="image" src="images/submit.png" alt="Submit" width="120" height="120">
+                    </fieldset>
+                    <input type="hidden" id="laboratorio4" name="Lab4" value="9999">
+                </form>
+            </section>         
+            <section>
+                <svg width="100" height="100" xmlns="index.html">
+                    <a href="index.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Index
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="info.html">
+                    <a href="info.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Informações
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="local.html">
+                    <a href="local.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Localização
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="multimedia.html">
+                    <a href="multimedia.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Multimedia
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="110" height="100" xmlns="quizz.html">
+                    <a href="quizz.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Quizz
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="comentarios.html">
+                    <a href="comentarios.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Comentários
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+            </section>
+        </main>
+    <footer>Diogo Carrilho A21902660 Universidade Lusófona 2020/2021</footer>
+    </body>
+</html>
