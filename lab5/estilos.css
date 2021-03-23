@@ -110,6 +110,15 @@ span{
     opacity: 0.5;
     z-index : -1;
 }
+/*#flex-container {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content:space-evenly; 
+    }
+*/
 /*.container{
 display: grid;
 grid-template-columns: auto auto auto auto;
@@ -140,4 +149,4 @@ nav{
     height: 100px;
     grid-area: menu;
 }*/
-/*tentei entender a grid mas infelizmente nao me consegui entender como funcionava bem, irei estudar melhor este tema durante as ferias e enquanto desenvolvo o projeto*/
+/*tentei entender a grid e o flex mas infelizmente nao consegui entender como funcionava bem, irei estudar melhor este tema durante as ferias e enquanto desenvolvo o projeto*/
