@@ -1,0 +1,143 @@
+@import "estilos.css";
+
+body{
+    background:paleturquoise;
+
+}
+.titulo {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+}
+a:hover {
+    color: red;
+}
+a:visited{
+    color: grey;
+}
+a:link{
+    color: black;
+}
+a:active{
+    color: blue;
+}
+p::first-letter{
+    font-size: x-large;
+    color: red;
+}
+p::first-line{
+    font-variant: small-caps;
+}
+.poema {
+    background:palegoldenrod;
+}
+tr:nth-child(even){
+    background: turquoise;
+}
+tr:nth-child(odd){
+    background: paleturquoise;
+}
+a[target="background"]{
+    background-color: paleturquoise ;
+}
+[title~="test"]{
+    border: 3px solid black;
+}
+[class|="info"]{
+    background: turquoise;
+}
+[class^=BackgroundLocal]{
+    background: turquoise;
+}
+[class$="FimLocal"]{
+    background: turquoise;
+}
+[class*="local"]{
+    font-size: x-large;
+}
+span{
+    display: block;
+  }
+  div p{
+    background-color:aliceblue;
+  }
+  div > h3{
+      background-color: aqua;
+  }
+  div ~ a{
+      background-color:aquamarine;
+  }
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+  }
+  div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+  }
+  
+  .imagem{
+    background:url(images/coliseuroma_pequeno.jpg);
+    height: 56px;
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: 1;
+    opacity: 0.5;
+    z-index : -1;
+}
+.imagem2{
+    background:url(images/fontanaditrevi_pequeno.jpg);
+    height: 56px;
+    width: 100px;
+    position: absolute;
+    left: 80px;
+    top: 1;
+    opacity: 0.5;
+    z-index : -1;
+}
+
+.imagemRoma{
+    background:url(images/roma.png);
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    left: 300px;
+    top: 1;
+    opacity: 0.5;
+    z-index : -1;
+}
+/*.container{
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-template-rows: auto auto auto auto;
+grid-template-areas: "header header header header"
+                     "nav main main aside"
+                     "footer footer footer footer";
+}
+header{
+    height: 100px;
+    grid-area: header;
+    background-color:yellow;
+}
+main{
+    height: 100px;
+    grid-area: main;
+}
+aside{
+    height: 100px;
+    grid-area: aside;
+}
+footer{
+    height: 100px;
+    grid-area: footer;
+    
+}
+nav{
+    height: 100px;
+    grid-area: menu;
+}*/
+/*tentei entender a grid mas infelizmente nao me consegui entender como funcionava bem, irei estudar melhor este tema durante as ferias e enquanto desenvolvo o projeto*/

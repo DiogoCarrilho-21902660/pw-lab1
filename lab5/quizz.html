@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Diogo carrilho">
+        <meta name="keywords" content="palavras chave">
+        <meta name="description" content="Website sobre Roma">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="images/roma.ico"/>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <title>Roma</title>
+    </head>
+    <body>
+        <header>
+            
+            <h1 class="titulo">Roma</h1>
+            <figure><img src="images/roma.png" title="test"><figcaption><details>Cidade de Roma</details></figcaption></figure><br>
+        </header>
+        <nav>
+            <a href="quizz.html"><i><i class="material-icons">&#xe87f;</i><b>Quizz</b></a> |
+                <a href="comentarios.html"><i class="material-icons">&#xe3c9;</i>Comentários</a> |
+                    <a href="../index.html"><i class="material-icons">&#xe88a;</i>Home</a> |
+                        <a href="index.html"><i class="material-icons">&#xe851;</i>Introdução</a> |
+                            <a href="info.html"><i class="material-icons">&#xe88e;</i>Informações</a> |
+                                <a href="local.html"><i class="material-icons">&#xe0c8;</i>Localização</a> |
+                                     <a href="multimedia.html"><i class="material-icons">&#xe63a;</i>Multimedia</a> |
+                                        <a href="html5-css.html"><i class="material-icons">&#xe86f;</i>HTML5 e CSS</a><br>
+        </nav>
+        <main>
+            <section>
+                <div><h3>Quizz</h3></div>
+
+                <form method="POST" action="mailto:nome.apelido@gmail.com"> 
+                    <fieldset>
+                        <legend>Informações básicas</legend>
+                            <span><label for="Nome">Nome</label>
+                                <input type="text" id="Nome" name="Nome" placeholder="Resposta" size="20" autofocus required></span>
+                            <span><label for="Apelido">Apelido</label>
+                                <input type="text" id="Apelido" name="Apelido" placeholder="Resposta" size="20" required></span>
+                            <span><label for="email">Email</label>
+                                <input type="email" id="email" name="email"placeholder="Resposta" autocomplete="off" size="30" required></span>
+                            
+                    </fieldset>
+                    <fieldset>
+                        <legend>Introduza a sua data de aniversário</legend>
+                        <input id="date" type="date">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Onde se localiza Roma?</legend>
+                        <span><label for="R1">Itália</label>
+                            <input type="radio" id="R1" name="RL" value="Itália"></span>                       
+                        <span><label for="R2">Rússia</label>
+                            <input type="radio" id="R2" name="RL" value="Rússia"></span>                       
+                        <span><label for="R3">Portugal</label>
+                            <input type="radio" id="R3" name="RL" value="Portugal"></span>  
+                    </fieldset>
+                    <fieldset>
+                    <fieldset>
+                        <legend>Quantos campeonatos ganhou a <i>Associazione Sportiva Roma</i></legend>
+                        <label for="Campeonatos">Número de campeonatos?(0 a 10)</label>
+                        <input type="number" id="Campeonatos" name="Campeonatos" min="0" max="10" step="1" >
+                    </fieldset>
+                    <fieldset>
+                        <legend>Qual o nome deste monumento?</legend>
+                        <img src="images/quizztrevi.jpg" alt="trevi">
+                        <label for="R1"></label>
+                        
+                        <input type="text" id="R1" name="R1" placeholder="Resposta" size="40" maxlength="30"> 
+                    </fieldset>
+                    <fieldset>
+                        <legend>Quando é que a cidade de Roma se tornou a capital de Itália?</legend>
+                        <span><input type="checkbox" id="1850" name="RC1" value="1850">
+                        <label for="R1">1850</label></span>
+                        <span><input type="checkbox" id="1837" name="RC2" value="1837">
+                        <label for="R2">1837</label></span>
+                        <span><input type="checkbox" id="1870" name="RC3" value="1870">
+                        <label for="R3">1870</label></span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Que cor te faz lembrar de Roma?</legend>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    </fieldset>
+                    <fieldset>
+                        <legend>De 0 a 100, quanto gostarias de visitar Roma?</legend>
+                        <input type="range" id="range" name="range" min="0" max="100" onchange="output.value=this.value">
+                        <label>Valor:</label>
+                        <output name="output"><output class="value"></output></output>%
+        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sugestões</legend>
+                        <p>Qualquer sugestão submeta via ficheiro .txt</p><br>
+                        <input type="file" id="files" name="files" multiple>
+                        <br><input type="image" src="images/submit.png" alt="Submit" width="120" height="120">
+                    </fieldset>
+                </form>
+                <br>
+            </section>  
+            <center> <aside>
+                <img src="images/r1.png" title="foto" id="r1" alt="Cidade de Roma">
+                <img src="images/r2.png"  title="foto" id="r2" alt="Cidade de Roma">
+            </aside> </center>
+            <aside>
+               <p>  Muitas vezes referida como a “cidade eterna”, Roma recebeu este epíteto desde os seus primeiros tempos. Os escritores da Roma Antiga
+                    frequentemente se referiam assim à cidade, ajudando a enraizar a crença dos seus habitantes,
+                    de que nada conseguiria destruí-la. Independentemente do que acontecesse no resto do mundo e 
+                    ainda que o Império entrasse em decadência, Roma sobreviveria.  </p>
+            </aside>         
+             <section>
+                <svg width="100" height="100" xmlns="index.html">
+                    <a href="index.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Index
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="info.html">
+                    <a href="info.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Informações
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="local.html">
+                    <a href="local.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Localização
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="multimedia.html">
+                    <a href="multimedia.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Multimedia
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="110" height="100" xmlns="quizz.html">
+                    <a href="quizz.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Quizz
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="comentarios.html">
+                    <a href="comentarios.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->Comentários
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+                <svg width="150" height="100" xmlns="html5-css.html">
+                    <a href="html5-css.html">
+                        <text x="50" y="50" fill="Blue">
+                            ->html5-css
+                            <animate id="B1" attributeName="fill" from="blue" to="green" dur="2s" fill="freeze" repeatCount="indefinite"/>
+                        </text>
+                    </a>
+                </svg>
+            </section> 
+        </main>
+        <footer>Diogo Carrilho A21902660 Universidade Lusófona 2020/2021</footer>
+    </body>
+
+</html>
